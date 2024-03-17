@@ -1,6 +1,6 @@
 # Email Handler
 
-A browser extension that automatically replies email based on received content.
+A browser extension that automatically replies emails based on received content.
 
 ## How To Use
 
@@ -24,3 +24,7 @@ A browser extension that automatically replies email based on received content.
 
 1. Gmail
 2. Outlook
+
+## Design Document
+
+[Version 1 - (Single Set of Inputs & Gmail Only)](https://team-euw7ngch6osa.atlassian.net/wiki/external/MDJkNzEyNDNkYTdiNDBhZmI1ZDM0OTFkYzcwOGYyYTU)
