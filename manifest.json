@@ -18,9 +18,20 @@
         "default_popup": "popup/popup.html"
     },
     "options_page": "options/options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/mail/*/*/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
     "permissions": [
         "storage",
-        "alarms"
+        "alarms",
+        "tabs"
     ],
     "background": {
         "service_worker": "background.js"
