@@ -21,7 +21,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://mail.google.com/mail/*/*/*"
+                "https://mail.google.com/mail/u/*/*"
             ],
             "js": [
                 "content-script.js"
