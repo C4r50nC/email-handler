@@ -11,16 +11,19 @@ function checkURL(currentURL) {
 
 chrome.runtime.onMessage.addListener((_msg, sender, _sendResponse) => {
   currentURL = sender.url;
-  let isInbox = checkURL(currentURL);
-  if (isInbox) {
-    console.log("Inbox!");
-  }
+  getBodyText(currentURL);
 });
 
 chrome.tabs.onUpdated.addListener((_tabId, changeInfo, _tab) => {
   const currentURL = changeInfo.url;
-  let isInbox = checkURL(currentURL);
-  if (isInbox) {
-    console.log("Inbox!");
-  }
+  getBodyText(currentURL);
 });
+
+function getBodyText(currentURL) {
+  let isInbox = checkURL(currentURL);
+  if (!isInbox) {
+    return;
+  }
+
+  // Send to content script to get innerHTML from all p tags
+}
