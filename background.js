@@ -26,4 +26,5 @@ function getBodyText(currentURL) {
   }
 
   // Send to content script to get innerHTML from all p tags
+  chrome.runtime.sendMessage(null, null);
 }
